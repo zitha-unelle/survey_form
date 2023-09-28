@@ -1,0 +1,169 @@
+html {
+  height: 100%;
+  width: 100%;
+  color:white;
+ font-family: 'Poppins', sans-serif;  
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/*
+body {
+  width: 100%;
+  height: 100%;
+  background-image:url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-image:url(image/survey-form-background.jpeg);
+  background-color:#1b1b3230;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}*/
+body {
+  padding-top: 40px;
+}
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(image/survey-form-background.jpeg);
+    /*url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: inherit;
+}
+  
+  h1{
+    text-align:center;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0px; 
+  }
+  p{
+    font-size: 18px;
+    text-align:center;
+  }
+  
+  .description {
+    font-style: italic;
+    font-size: 1.125rem;
+    margin-bottom: 30px;
+    font-weight: 100;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+ }
+  form{
+    text-align:left;
+    margin:20px auto;
+    padding:40px; 
+    background-color: #1b1b32cc;
+    border-radius: 0.25rem;
+    width: 60%;
+  }
+  
+  input, select, textarea, button {
+    padding:9px 18px;
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    font-size: 16px;
+  }
+  
+  .form_label{
+    margin:0 0 8px;
+    display:flex;
+  }
+
+  .form-group{
+    margin-bottom: 20px;
+    padding:4px;
+  }
+
+  legend, .form_label, .end{
+    margin:0 0 8px;
+  }
+
+  .role{
+    margin:5px;
+  }
+  
+  .recommend, .form_fields {
+    
+    margin:0 10px 0 0;
+    height: 20px;
+    width: 20px;
+    vertical-align: top;
+  }
+
+  .tt {
+    margin-bottom: 5px;
+  }
+
+
+  .mb-10{
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .mb-5{
+    margin-bottom: 7px;
+    margin-top: 7px;
+  }
+
+span.field{
+  font-family: 'Poppins', sans-serif; 
+  font-size: 15px;
+  margin: 0 0 0px 5px;
+  font-weight: lighter;
+  padding-top: 2px;
+}
+.input_textarea{
+  padding: 10px;
+  min-height: 120px;
+    width: 100%;
+    resize: vertical;
+    font-size:16px;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.submission{
+  
+    width: 100%;
+    padding: 12px;
+    background: #37af65;
+    color:white;
+    border: 0px;
+    margin-top: 30px;
+    
+    
+}
+
+@media (max-width:600px){
+form{
+  width:70%;
+}
+}
+  
+@media (max-width:450px){
+  p{
+    width:90%;
+    margin:auto;
+  }
+  form{
+    width:90%;
+  }
+}
